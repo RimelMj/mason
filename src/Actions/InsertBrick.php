@@ -6,7 +6,7 @@ use Awcodes\Mason\Mason;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Radio;
 use Livewire\Component;
-use Filament\Forms\Components\Actions\ButtonAction;
+use Filament\Actions\Action as ButtonAction;
 
 class InsertBrick
 {
