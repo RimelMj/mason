@@ -105,27 +105,28 @@
             </x-filament::input.wrapper>
         </div>
         <div class="mason-actions-bricks">
-            @if ($actions)
+                       @if ($actions)
                 @foreach ($actions as $action)
                     <div
                         draggable="true"
-                        x-on:dragstart="$event?.dataTransfer?.setData('brickIdentifier', @js($action->getName()))"
+                        x-on:dragstart="$event?.dataTransfer?.setData('brickIdentifier', @js($action['name'] ?? $loop->index))"
                         class="mason-actions-brick"
                         x-bind:class="{
-                            'filtered': ! filterActions().includes(@js($action->getName())),
+                            'filtered': ! filterActions().includes(@js($action['name'] ?? $loop->index)),
                         }"
                     >
-                        @if ($action->getIcon())
+                        @if (!empty($action['icon']))
                             <x-filament::icon
-                                :icon="$action->getIcon()"
+                                :icon="$action['icon']"
                                 class="h-5 w-5 shrink-0"
                             />
                         @endif
-
-                        {{ $action->getLabel() }}
+            
+                        {{ $action['label'] ?? 'Unnamed' }}
                     </div>
                 @endforeach
             @endif
+
         </div>
     </div>
 </div>
