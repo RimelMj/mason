@@ -3,7 +3,7 @@
 namespace Awcodes\Mason\Actions;
 
 use Awcodes\Mason\Mason;
-use Filament\Forms\Components\Actions\ButtonAction as Action;
+use Filament\Forms\Components\Action;
 use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\Select;
 use Filament\Support\Enums\Alignment;
