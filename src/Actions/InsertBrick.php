@@ -7,6 +7,7 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Radio;
 use Livewire\Component;
 use Filament\Actions\Action as ButtonAction;
+use Filament\Support\Enums\Alignment;
 
 class InsertBrick
 {
@@ -15,7 +16,7 @@ class InsertBrick
         return ButtonAction::make('insertBrick')
             ->label(__('mason::mason.insert_brick'))
             ->modalWidth('sm')
-            ->modalActionsAlignment('center')
+            ->modalAlignment(Alignment::Center)
             ->form(function (Mason $component) {
                 return [
                     Select::make('name')
