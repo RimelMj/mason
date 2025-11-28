@@ -6,8 +6,6 @@ use Awcodes\Mason\Mason;
 use Filament\Actions\Action;
 use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\Select;
-use Filament\Support\Enums\Alignment;
-use Filament\Support\Enums\MaxWidth;
 use Livewire\Component;
 
 class InsertBrick
