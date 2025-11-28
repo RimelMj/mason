@@ -14,8 +14,8 @@ class InsertBrick
     {
         return Action::make('insertBrick')
             ->label(fn (): string => trans('mason::mason.insert_brick'))
-            ->modalWidth(MaxWidth::Small)
-            ->modalFooterActionsAlignment(Alignment::Center)
+            ->modalWidth('sm')
+            ->modalActionsAlignment('center')
             ->form(function (Mason $component) {
                 return [
                     Select::make('name')
