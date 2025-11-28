@@ -9,7 +9,7 @@ use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\RichEditor;
-use Filament\Forms\Components\Section as FilamentSection;
+use Filament\Schemas\Components\Section as FilamentSection;
 use Filament\Forms\Components\ToggleButtons;
 use Illuminate\Support\HtmlString;
 
