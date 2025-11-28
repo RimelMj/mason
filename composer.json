@@ -25,7 +25,7 @@
         "filament/filament": "^3.2.139 || ^4.0",
         "spatie/laravel-package-tools": "^1.15.0",
         "stevebauman/hypertext": "^1.1",
-        "ueberdosis/tiptap-php": "^1.4"
+        "ueberdosis/tiptap-php": "^2.0"
     },
     "require-dev": {
         "larastan/larastan": "^2.0||^3.0",
